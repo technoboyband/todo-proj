@@ -28,6 +28,8 @@ const TodoApp = () => {
 
     const removeTodo = (id: string) => {
         console.log('remove todo')
+        const updatedTodos = todos.filter((todo) => todo.id !== id);
+        setTodos(updatedTodos);
 
     }
 
